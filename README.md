@@ -1,20 +1,22 @@
 # system-design-vault
 A curated collection of **system design knowledge + real-world case studies**.   This repo documents my journey mastering **High-Level Design (HLD)** and **Low-Level Design (LLD)** — from theory to practice — with recruiter-facing examples.
 
-Real-world HLD (High-Level Design) essentials — to build scalable systems like Google, Facebook, Netflix.
+## Real-world HLD (High-Level Design) essentials — to build scalable systems like Google, Facebook, Netflix.
 
-🏗️ Real-World HLD (High-Level Design) Essentials
+# 🏗️ Real-World HLD (High-Level Design) Essentials
 
-Staring with pure theory using Instagram, YouTube, and a demo system  URL Shortener as case studies
+# Staring with pure theory using Instagram, YouTube, and a demo system  URL Shortener as case studies
 
 ### Requirements Gathering
 
-📌 Step 1: Requirements Gathering Framework
+# 📌 Step 1: Requirements Gathering Framework
+
 
 When designing any large-scale system, you always split requirements into two buckets:
 
 ✅ Functional Requirements (What the system must do)
-Instagram
+
+# Instagram
 
 Upload photos/videos
 
@@ -26,7 +28,7 @@ Likes, comments, shares
 
 Notifications
 
-YouTube
+# YouTube
 
 Upload videos
 
@@ -38,7 +40,7 @@ Subscriptions & notifications
 
 Monetization (ads, premium)
 
-URL Shortener (Demo)
+# URL Shortener (Demo)
 
 Generate short URL
 
@@ -49,13 +51,13 @@ Track analytics (click count, geo, device)
 ✅ Non-Functional Requirements (How the system behaves)
 Availability
 
-Instagram: must be up 24/7 globally.
+# Instagram: must be up 24/7 globally.
 
-YouTube: downtime = millions lost in ad revenue.
+# YouTube: downtime = millions lost in ad revenue.
 
-URL Shortener: critical for links embedded everywhere.
+# URL Shortener: critical for links embedded everywhere.
 
-Latency
+# Latency
 
 Instagram: feed load < 200ms.
 
@@ -63,7 +65,7 @@ YouTube: video playback must start < 1s.
 
 URL Shortener: redirect < 50ms.
 
-Scalability
+# Scalability
 
 Instagram: billions of posts, millions of concurrent users.
 
@@ -71,7 +73,7 @@ YouTube: petabytes of video, global CDN distribution.
 
 URL Shortener: billions of URLs, high read-heavy traffic.
 
-Cost Efficiency
+# Cost Efficiency
 
 Instagram: optimize infra for storage + CDN.
 
@@ -80,10 +82,10 @@ YouTube: video transcoding is expensive → need efficient pipelines.
 URL Shortener: cheap storage, caching for hot URLs.
 
 
-📌 Step 2: Trade-offs (Consistency vs. Performance vs. Reliability)
+# 📌 Step 2: Trade-offs (Consistency vs. Performance vs. Reliability)
 This is where system design mastery comes in — you must articulate trade-offs.
 
-Consistency
+# Consistency
 
 Instagram: feed may show slightly stale likes/comments (eventual consistency).
 
@@ -91,7 +93,7 @@ YouTube: view counts may lag (eventual consistency).
 
 URL Shortener: must be strongly consistent (short → long mapping must never fail).
 
-Performance
+# Performance
 
 Instagram: caching feed results improves latency but may show outdated posts.
 
@@ -99,7 +101,7 @@ YouTube: CDN improves performance but requires replication delays.
 
 URL Shortener: cache hot URLs in Redis for instant redirects.
 
-Reliability
+# Reliability
 
 Instagram: replication across regions ensures uptime.
 
