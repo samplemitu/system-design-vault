@@ -48,14 +48,15 @@ Redirect short → long URL
 
 Track analytics (click count, geo, device)
 
+
 ✅ Non-Functional Requirements (How the system behaves)
 Availability
 
-# Instagram: must be up 24/7 globally.
+#Instagram: must be up 24/7 globally.
 
-# YouTube: downtime = millions lost in ad revenue.
+#YouTube: downtime = millions lost in ad revenue.
 
-# URL Shortener: critical for links embedded everywhere.
+#URL Shortener: critical for links embedded everywhere.
 
 # Latency
 
