@@ -5,7 +5,6 @@ A curated collection of **system design knowledge + real-world case studies**.  
 
 ## 🏗️ Real-World HLD (High-Level Design) Essentials
 
-## Staring with pure theory using Instagram, YouTube, and a demo system  URL Shortener as case studies
 
 ### Requirements Gathering
 
